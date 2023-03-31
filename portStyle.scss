@@ -144,6 +144,13 @@ a:hover {
   /** opacity: .5; **/
 }
 
+a li:hover {
+  color: white;
+  /** background: $acc2; **/
+  /** padding-left: 7px; **/
+  /** transition: translateX(20px); **/
+  /** opacity: .5; **/
+}
 .inform {
   position: absolute;
   top: 50%;
@@ -166,4 +173,24 @@ a:hover {
   color: $acc3;
   text-transform: capitalize;
   text-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+
+.assigns {
+  position: absolute;
+  top: 6%;
+  left: 30%;
+  /* transform: translate(-50%, -50%); */
+  color: $acc1;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 10px;
+  line-height: 50px;
+  text-shadow: 0 0 20px rgba(0,0,0,.6);
+  z-index: -1;
+}
+
+
+h2 {
+  color: $acc2;
 }
