@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   background: #4C6085;
+  font-family: "Jost", sans-serif;
 }
 
 nav {
@@ -138,8 +139,8 @@ a:hover {
   /** opacity: .5; **/
 }
 
-a li:hover {
-  color: white;
+li:link {
+  color: #F0C808;
   /** background: $acc2; **/
   /** padding-left: 7px; **/
   /** transition: translateX(20px); **/
@@ -175,14 +176,32 @@ a li:hover {
   top: 6%;
   left: 30%;
   /* transform: translate(-50%, -50%); */
-  color: #A7C6DA;
+  color: white;
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
-  letter-spacing: 10px;
   line-height: 50px;
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   z-index: -1;
+}
+
+ul {
+  line-height: 1.25rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+li {
+  margin-bottom: 45px;
+}
+
+li a {
+  color: #A7C6DA;
+}
+
+li a:hover {
+  color: #F0C808;
 }
 
 h2 {
