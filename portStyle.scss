@@ -1,10 +1,11 @@
 /********** COLORS **********
 ****************************/
 
-$main:  #4C6085; /** Dusty Blue **/
-$acc1: #A7C6DA; /** Columbia Blue **/
-$acc2: #F0C808; /** Jonquil (yellow) **/
+$main:  #A8DADC; /* #4C6085; /** Dusty Blue **/
+$acc1: #086788; /* Cerulean /* #457B9D;  /* #A7C6DA; /** Columbia Blue **/
+$acc2: #E63946;  /* #F0C808; /** Jonquil (yellow) **/
 $acc3:  #E8F7EE; /** Honeydew **/
+$acc4: #1D3557; /** Berkeley Blue **/
 
 $wdd230: "https://klittler-byui.github.io/wdd230/index.html";
 
@@ -20,6 +21,32 @@ body {
   font-family: 'Jost', sans-serif;;
 }
 
+#subtitle {
+  color: $acc1;
+}
+
+.portPages {
+
+}
+
+.classes {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: $acc1;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.nav-kori {
+  color: $acc3;
+  font-weight: 300;
+  justify-self: right;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  align-content: center;
+  font-size: 1.5rem;
+}
+
 nav {
   overflow: hidden;
   position: relative;
@@ -28,7 +55,6 @@ nav {
   width: 300px;
   transition: all 800ms cubic-bezier(.8, 0, .33, 1);
   border-radius: 0% 0% 100% 50%;
-
 }
 
 nav.nav-open {
@@ -51,7 +77,7 @@ nav .menu-icon {
 nav .menu-icon .line {
   padding: 0;
   width: 30px;
-  background: #fff;
+  background: $acc1;
   height: 2px;
   margin: 5px 0;
   transition: all 700ms cubic-bezier(.9, 0, .33, 1);
@@ -137,8 +163,16 @@ nav .nav-links .link {
     transition: all 300ms cubic-bezier(.9, 0, .33, 1);
 }
 
+#home-icon {
+  color: $acc3;
+  padding-top: 10px;
+}
+
+#home-icon:hover {
+  opacity: 50%;
+}
 a:hover {
-  color: white;
+  color: $acc3;
   /** background: $acc2; **/
   /** padding-left: 7px; **/
   /** transition: translateX(20px); **/
@@ -163,7 +197,6 @@ li:link {
   font-size: 2.5rem;
   letter-spacing: 10px;
   line-height: 50px;
-  text-shadow: 0 0 20px rgba(0,0,0,.6);
   z-index: -1;
 }
 
@@ -173,21 +206,19 @@ li:link {
   font-weight: 200;
   color: $acc3;
   text-transform: capitalize;
-  text-shadow: 0 0 10px rgba(0,0,0,.6);
+  /* text-shadow: 0 0 10px rgba(0,0,0,.6); */
 }
 
 .assigns {
-  position: absolute;
-  top: 6%;
-  left: 30%;
-  /* transform: translate(-50%, -50%); */
+
   color: white;
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
-
   line-height: 50px;
-  z-index: -1;
+  padding-left: 15px;
+  padding-bottom: 60px;
+  /* z-index: -1; */
 }
 ul {
   line-height: 1.25rem;
@@ -199,10 +230,13 @@ ul {
 }
 li {
   margin-bottom: 45px;
+  color: $acc1;
+  font-weight: 500;
 }
 
 li a {
   color: $acc1;
+  font-weight: 300;
 
 }
 
@@ -213,4 +247,21 @@ li a:hover {
 
 h2 {
   color: $acc2;
+  padding-top: 40px;
+}
+
+@media only screen and (min-width: 34em) /* 1024px */ {
+
+  .assigns  {
+      padding-left: 60px;
+    }
+
+    #home-icon  {
+      padding-left: 40px;
+    }
+
+    .nav-kori {
+      padding-right: 60px;
+    }
+
 }
